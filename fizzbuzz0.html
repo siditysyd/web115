@@ -49,13 +49,14 @@
 	<button type="submit">Submit</button>
 		    </form>
 	    </div>
-<script>alert("Hello, welcome to Sydnee's Smart Black Panther Studios!"); </script>
-<script>function greetUser() {
-            var firstName = document.getElementById("firstname").value;
-            alert("Hello, " + firstName + ", welcome to Sydnee's Smart Black Panther Studios!");
-} </script>
-        
-	
+   <script>
+        function updateGreeting() {
+	    const firstName = document.getElementById('first_name').value;
+            const middleInitial = document.getElementById('middle_initial').value;
+            const lastName = document.getElementById('last_name').value;
+            const newGreeting = `Hello, ${firstName} ${middleInitial}. ${lastName}!`;
+ }
+    </script>
 		
     </main>
 </body>
