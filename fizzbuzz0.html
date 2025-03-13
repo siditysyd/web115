@@ -43,34 +43,10 @@
 <!--Last Name Form-->
         <label for="last_name">Last Name:</label>
         <input type="text" id="last_name" name="lastname" required>
-			
-	<button type="submit" onclick="updateGreeting()">Submit</button>
+<!--Submit Button-->			
+	<button type="submit" onclick="updateGreeting()" id="submit-button">Submit</button>
 		    </form>
 	    </div>
-	
-		
-<div id="output"></div>
-   <script>
-        function updateGreeting() {
-	    const firstName = document.getElementById('first_name').value;
-            const middleInitial = document.getElementById('middle_initial').value;
-            const lastName = document.getElementById('last_name').value;
-            const newGreeting = `Hello, ${firstName} ${middleInitial}. ${lastName}!`;
- }
-    </script>
-	<script>
-	let output = '';
-            	or (let i = 1; i <= 125; i++) {
-                output += `${i}. black cat<br>`;
- }
-	let output = '';
-		if (i % 2 === 0) {
-                    output += `${i}. The number is even<br>`;
-                } else {
-                    output += `${i}. The number is odd<br>`;
-}
-        document.getElementById('output').innerHTML = output;
-}	</script>
     </main>
 </body>
 <footer>
