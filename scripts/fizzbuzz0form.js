@@ -20,7 +20,7 @@
             alert("The highest number you can select is 125.");
             countTo = 125; 
         }
-        // Check if a results container already exists, if not, create one
+// Check if a results container already exists, if not, create one
         let resultsContainer = document.getElementById("results-container");
         if (!resultsContainer) {
             resultsContainer = document.createElement("div");
