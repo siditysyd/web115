@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=0.1"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <title>Sydnee Verbal's Smart Black Panther Studios Fizz Buzz 0</title>
     <link href="styles/stylesheet.css" rel="stylesheet">
     <script src="https://lint.page/kit/67ff88.js" crossorigin="anonymous"></script>
@@ -19,87 +19,84 @@
                 <li><a href="introduction.html">Introduction</a></li>
                 <li><a href="contract.html">Contract</a></li>
                 <li><a href="fizzbuzz0.html">Fizz Buzz</a></li>
-		<li><a href="brand.html">Brand</a></li>
-	    </ul>	   
-	  </div>
+                <li><a href="brand.html">Brand</a></li>
+            </ul>	   
+          </div>
         </nav>
     </header>
-	
+    
     <main>
         <h2>Sydnee Verbal's Smart Black Panther Studios Fizz Buzz</h2>
-	    <h3></h3>
-	    
-		    <form action="#" method="post" id="name_form">
-			     <div class="form_name">
-<!--First Initial Form-->
-        <label for="first_name">First Name:</label>
-        <input type="text" id="first_name" name="firstname" required>
-	    </div>
-	<div class="form_name">
-<!--Middle Initial Form-->
-        <label for="middle_name">Middle Initial:</label>
-        <input type="text" id="middle_initial" name="middleinitial" maxlength="1">
-	</div>
-	<div class="form_name">
-<!--Last Name Form-->
-        <label for="last_name">Last Name:</label>
-        <input type="text" id="last_name" name="lastname" required>
-	</div>
-<!--Submit Button-->			
-	<button type="button" onclick="updateGreeting()" id="submit-button">Submit</button>
-		    </form>
-<div id="output"></div>
-	    <script>
-//Updating the greeting using the input values
-        function updateGreeting() {
-	    const firstName = document.getElementById('first_name').value;
-            const middleInitial = document.getElementById('middle_initial').value;
-            const lastName = document.getElementById('last_name').value;
-            const newGreeting = `Hello, Welcome to Black Panther Studios, ${firstName} ${middleInitial}. ${lastName}!`;
-		
-//Showing the new greeting on the webpage
-  document.getElementById("newGreeting").textContent = '${newGreeting}!`;
- }
+        <h3></h3>
+        
+        <form action="#" method="post" id="name_form">
+            <div class="form_name">
+                <!--First Initial Form-->
+                <label for="first_name">First Name:</label>
+                <input type="text" id="first_name" name="firstname" required>
+            </div>
+            <div class="form_name">
+                <!--Middle Initial Form-->
+                <label for="middle_initial">Middle Initial:</label>
+                <input type="text" id="middle_initial" name="middleinitial" maxlength="1">
+            </div>
+            <div class="form_name">
+                <!--Last Name Form-->
+                <label for="last_name">Last Name:</label>
+                <input type="text" id="last_name" name="lastname" required>
+            </div>
+            <!--Submit Button-->			
+            <button type="button" onclick="updateGreeting()" id="submit-button">Submit</button>
+        </form>
+        <div id="output"></div>
+        
+        <script>
+            // Updating the greeting using the input values
+            function updateGreeting() {
+                const firstName = document.getElementById('first_name').value;
+                const middleInitial = document.getElementById('middle_initial').value;
+                const lastName = document.getElementById('last_name').value;
+                const newGreeting = `Hello, Welcome to Black Panther Studios, ${firstName} ${middleInitial ? middleInitial + '.' : ''} ${lastName}!`;
+                
+                // Showing the new greeting on the webpage
+                document.getElementById("greeting").textContent = newGreeting;
 
-// Input number request
-        let countTo = prompt(`How high do you want to count, ${firstName}? (Max: 125)`);
-        countTo = parseInt(countTo, 10);
+                // Input number request
+                let countTo = prompt(`How high do you want to count, ${firstName}? (Max: 125)`);
+                countTo = parseInt(countTo, 10);
 
-// Confirm number is valid
-        if (isNaN(countTo) || countTo <= 0) {
-            alert("Please enter a number greater than 0.");
-            return;
-        } else if (countTo > 125) {
-            alert("The highest number you can select is 125.");
-            countTo = 125; 
-        }
-// Check if a results container already exists, if not, create one
-        let resultsContainer = document.getElementById("results-container");
-        if (!resultsContainer) {
-            resultsContainer = document.createElement("div");
-            resultsContainer.id = "results-container";
-            document.getElementById("greeting").parentElement.appendChild(resultsContainer);
-        } else {
-            resultsContainer.innerHTML = ""; // Clear old results before adding new ones
-        }
+                // Confirm number is valid
+                if (isNaN(countTo) || countTo <= 0) {
+                    alert("Please enter a number greater than 0.");
+                    return;
+                } else if (countTo > 125) {
+                    alert("The highest number you can select is 125.");
+                    countTo = 125; 
+                }
 
-//Creating the original loop displaying Black Cat
-	let output = '';
-            	if (i = 1; i <= countTo; i++) {
-                output += `${i}. black cat<br>`;
- }
-//Creating the loop with the even and odd output
-	let output = '';
-	for (let i = 1; i <= countTo; i++) {
-		output += `${i}. black cat<br>`;
-    		if (i % 2 === 0) {
-       		 output += `${i}. The number is even<br>`;
-   		 } else {
-       		 output += `${i}. The number is odd<br>`;
-    }
-}
-document.getElementById('output').innerHTML = output;
-	    </script>
+                // Check if a results container already exists, if not, create one
+                let resultsContainer = document.getElementById("results-container");
+                if (!resultsContainer) {
+                    resultsContainer = document.createElement("div");
+                    resultsContainer.id = "results-container";
+                    document.getElementById("greeting").parentElement.appendChild(resultsContainer);
+                } else {
+                    resultsContainer.innerHTML = ""; // Clear old results before adding new ones
+                }
+
+                // Creating the loop with the even and odd output
+                let output = '';
+                for (let i = 1; i <= countTo; i++) {
+                    output += `${i}. black cat<br>`;
+                    if (i % 2 === 0) {
+                        output += `${i}. The number is even<br>`;
+                    } else {
+                        output += `${i}. The number is odd<br>`;
+                    }
+                }
+                document.getElementById('output').innerHTML = output;
+            }
+        </script>
     </main>
 </body>
 <footer>
@@ -107,7 +104,7 @@ document.getElementById('output').innerHTML = output;
     <nav>
         <ul>
             <li><a href="https://github.com/siditysyd">Github</a></li> | <li><a href="https://siditysyd.github.io">Github.io</a></li> |<li><a href="https://siditysyd.github.io/Web115/brand.html">WEB115.io</a></li> | <li><a href="https://www.freecodecamp.org/SereneSydnee">freeCodeCamp</a></li> |
-	    <li><a href="https://www.codecademy.com/profiles/SereneSydnee">Codeacademy</a></li> | <li><a href="https://jsfiddle.net/u/SereneSydnee/fiddles/">JSFiddle</a></li> | <li><a href="https://www.linkedin.com/in/sydnee-verbal/">Linkedin</a></li>
+            <li><a href="https://www.codecademy.com/profiles/SereneSydnee">Codeacademy</a></li> | <li><a href="https://jsfiddle.net/u/SereneSydnee/fiddles/">JSFiddle</a></li> | <li><a href="https://www.linkedin.com/in/sydnee-verbal/">Linkedin</a></li>
         </ul>
     </nav>
 </footer>
