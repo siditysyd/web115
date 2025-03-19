@@ -40,7 +40,7 @@
                         w.removeEventListener("scroll", scrollFunc);
                         ajax(element.getAttribute("data-include"), [element]);
                     }
-                })
+                };
             }
             var store = {};
             var dis = d.querySelectorAll('[data-include]:not([data-in])');
@@ -59,7 +59,7 @@
             for (var key in store) {
                 ajax(key, store[key]);
             }
-        }
+        };
     }
     w.HTMLInclude();
-}(window, document)
+}(window, document);
