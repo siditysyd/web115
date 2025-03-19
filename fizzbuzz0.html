@@ -46,16 +46,17 @@
         <input type="text" id="last_name" name="lastname" required>
 	</div>
 <!--Submit Button-->			
-	<button type="submit" onclick="updateGreeting()" id="submit-button">Submit</button>
+	<button type="button" onclick="updateGreeting()" id="submit-button">Submit</button>
 		    </form>
-
+<div id="output"></div>
 	    <script>
-	    //Updating the greeting using the input values
+//Updating the greeting using the input values
         function updateGreeting() {
 	    const firstName = document.getElementById('first_name').value;
             const middleInitial = document.getElementById('middle_initial').value;
             const lastName = document.getElementById('last_name').value;
-            const newGreeting = `Hello, ${firstName} ${middleInitial}. ${lastName}!`;
+            const newGreeting = `Hello, Welcome to Black Panther Studios, ${firstName} ${middleInitial}. ${lastName}!`;
+		
 //Showing the new greeting on the webpage
   document.getElementById("newGreeting").textContent = '${newGreeting}!`;
  }
