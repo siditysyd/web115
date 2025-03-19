@@ -8,7 +8,7 @@
             function ajax(url, elements) {
                 var xhr = new XMLHttpRequest();
                 xhr.onreadystatechange = function() {
-                    if (xhr.readyState == 4 && xhr.status == 200) {
+                    if (xhr.readyState === 4 && xhr.status === 200) {
                         elements.forEach(function(element) {
                             var dataReplace = element.getAttribute("data-replace");
                             var z = xhr.responseText;
