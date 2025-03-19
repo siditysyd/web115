@@ -4,9 +4,9 @@
             const middleInitial = document.getElementById('middle_initial').value;
             const lastName = document.getElementById('last_name').value;
             const newGreeting = `Hello, ${firstName} ${middleInitial}. ${lastName}!`;
- }
 //Showing the new greeting on the webpage
-  document.getElementById("newGreeting").textContent = '{newGreeting}!`;
+  document.getElementById("newGreeting").textContent = '${newGreeting}!`;
+ }
 
 // Input number request
         let countTo = prompt(`How high do you want to count, ${firstName}? (Max: 125)`);
@@ -32,15 +32,17 @@
 
 //Creating the original loop displaying Black Cat
 	let output = '';
-            	if (i = 1; i <= 125; i++) {
+            	if (i = 1; i <= countTo; i++) {
                 output += `${i}. black cat<br>`;
  }
 //Creating the loop with the even and odd output
 	let output = '';
-		if (i % 2 === 0) {
-                    output += `${i}. The number is even<br>`;
-                } else {
-                    output += `${i}. The number is odd<br>`;
+	for (let i = 1; i <= countTo; i++) {
+		output += `${i}. black cat<br>`;
+    		if (i % 2 === 0) {
+       		 output += `${i}. The number is even<br>`;
+   		 } else {
+       		 output += `${i}. The number is odd<br>`;
+    }
 }
-        document.getElementById('output').innerHTML = output;
-}
+document.getElementById('output').innerHTML = output;
