@@ -32,7 +32,7 @@
 
 //Creating the original loop displaying Black Cat
 	let output = '';
-            	or (let i = 1; i <= 125; i++) {
+            	if (i = 1; i <= 125; i++) {
                 output += `${i}. black cat<br>`;
  }
 //Creating the loop with the even and odd output
