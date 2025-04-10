@@ -33,11 +33,10 @@
 //Creating the loop with the even and odd output
 	let output = '';
 	for (let i = 1; i <= countTo; i++) {
-		output += `${i}. black cat<br>`;
     		if (i % 2 === 0) {
-       		 output += `${i}. The number is even<br>`;
+       		 output += `${i}. Black cat, the number is even<br>`;
    		 } else {
-       		 output += `${i}. The number is odd<br>`;
+       		 output += `${i}. Black cat, the number is odd<br>`;
     }
 }
 document.getElementById('output').innerHTML = output;
