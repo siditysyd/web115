@@ -3,7 +3,7 @@
                 const firstName = document.getElementById('first_name').value;
                 const middleInitial = document.getElementById('middle_initial').value;
                 const lastName = document.getElementById('last_name').value;
-                const newGreeting = `Hello, ${firstName} ${middleInitial ? middleInitial + '.' : ''} ${lastName}, welcome to Fizz Buzz!`;
+                const newGreeting = `Hello, ${firstName} ${middleInitial ? middleInitial + '.' : ''} ${lastName}, Welcome to Fizz Buzz 1!`;
                 
 // Showing the new greeting on the webpage
                 document.getElementById("greeting").textContent = newGreeting;
