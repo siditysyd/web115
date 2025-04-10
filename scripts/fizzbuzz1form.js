@@ -11,7 +11,7 @@
 //Creating the function for the word outputs
 function generateList() {
     const maxCount = 140; 
-    const defaultWord = "Rawrr"; 
+    const defaultWord = ""; 
     const divisibleBy3 = "Kitty!"; 
     const divisibleBy5 = "Cat!"; 
     const outputContainer = document.getElementById('output'); 
