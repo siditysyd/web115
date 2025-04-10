@@ -1,3 +1,13 @@
+ // Updating the greeting using the input values
+            function updateGreeting() {
+                const firstName = document.getElementById('first_name').value;
+                const middleInitial = document.getElementById('middle_initial').value;
+                const lastName = document.getElementById('last_name').value;
+                const newGreeting = `Hello, ${firstName} ${middleInitial ? middleInitial + '.' : ''} ${lastName}, welcome to Fizz Buzz!`;
+                
+// Showing the new greeting on the webpage
+                document.getElementById("greeting").textContent = newGreeting;
+                
 //Creating the function for the word outputs
 function generateList() {
     const maxCount = 140; 
