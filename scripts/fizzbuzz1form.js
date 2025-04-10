@@ -1,9 +1,9 @@
 //Creating the function for the word outputs
 function generateList() {
     const maxCount = 140; 
-    const defaultWord = "boo!"; 
-    const divisibleBy3 = "EEK!"; 
-    const divisibleBy5 = "WOW!"; 
+    const defaultWord = "Rawrr"; 
+    const divisibleBy3 = "Kitty!"; 
+    const divisibleBy5 = "Cat!"; 
     const outputContainer = document.getElementById('output'); 
 
   // Initialize the string for the list
