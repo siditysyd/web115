@@ -7,6 +7,16 @@
                 
 // Showing the new greeting on the webpage
                 document.getElementById("greeting").textContent = newGreeting;
+
+ // Check if a results container exists, else create one or remove old ones before making new ones
+        let resultsContainer = document.getElementById("results-container");
+        if (!resultsContainer) {
+            resultsContainer = document.createElement("div");
+            resultsContainer.id = "results-container";
+            document.getElementById("greeting").parentElement.appendChild(resultsContainer);
+        } else {
+            resultsContainer.innerHTML = "";
+        }
                 
 //Creating the function for the word outputs
 function generateList() {
