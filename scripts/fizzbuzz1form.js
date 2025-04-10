@@ -50,6 +50,6 @@ document.addEventListener('DOMContentLoaded', () => {
     generateList();
 });
 // Prevent form submission & handle everything inside the event listener
-    document.getElementById("name-form").addEventListener("submit", function (event) {
+    document.getElementById("form_name").addEventListener("submit", function (event) {
         event.preventDefault(); // Prevents the form from refreshing the page
 
