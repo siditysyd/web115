@@ -29,11 +29,6 @@
         } else {
             resultsContainer.innerHTML = ""; // Clear old results before adding new ones
         }
-
-//Creating the original loop displaying Black Cat
-	let output = '';
-            	if (i = 1; i <= countTo; i++) {
-                output += `${i}. black cat<br>`;
  }
 //Creating the loop with the even and odd output
 	let output = '';
