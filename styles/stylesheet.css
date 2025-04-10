@@ -67,7 +67,7 @@ body:not(.output) {
 }
 .form_name, .output {
 	color: white; 
-	border: 3px solid #1C6EA4;
+	border: 3px solid transparent;
 	text-align: left;
 	
 	
