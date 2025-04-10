@@ -1,17 +1,3 @@
-// Run the functions after the page loads
-document.addEventListener('DOMContentLoaded', () => {
-    generateList();
-
-    // Prevent form submission & handle everything inside the event listener
-    const form = document.getElementById("form_name");
-    if (form) {
-        form.addEventListener("submit", function (event) {
-            event.preventDefault(); // Prevents the form from refreshing the page
-            updateGreeting();
-        });
-    } else {
-        console.error("Form with ID 'form_name' not found.");
-    }
     // Updating the greeting using the input values
 function updateGreeting() {
     const firstName = document.getElementById('first_name').value;
@@ -32,6 +18,8 @@ function updateGreeting() {
         resultsContainer.innerHTML = "";
     }
 }
+//Gernate the list only after the form_name has been submitted
+	generateList();
 
 // Function for generating the word output list
 function generateList() {
@@ -41,11 +29,6 @@ function generateList() {
     const divisibleBy5 = "Cat!"; 
     const outputContainer = document.getElementById('output');
 
-    // Check if the output container exists
-    if (!outputContainer) {
-        console.error("Output container with ID 'output' not found.");
-        return;
-    }
 
     // Initialize the string for the list
     let output = ""; 
@@ -70,5 +53,21 @@ function generateList() {
             paragraph.textContent = output;
 			paragraph.classList.add(cssClass);
             resultsContainer.appendChild(paragraph);
+
+// Attach event listeners
+document.addEventListener('DOMContentLoaded', () => {
+	
+ // Prevent form submission & handle everything inside the event listener
+    const form = document.getElementById("form_name");
+    if (form) {
+        form.addEventListener("submit", function (event) {
+            event.preventDefault(); // Prevents the form from refreshing the page
+            updateGreeting(); // Updates the greeting and generates the list
+        });
+    } else {
+        console.error("Form with ID 'form_name' not found.");
+    }
+});
+
 
 });
