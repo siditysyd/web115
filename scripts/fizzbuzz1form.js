@@ -1,4 +1,18 @@
-// Updating the greeting using the input values
+// Run the functions after the page loads
+document.addEventListener('DOMContentLoaded', () => {
+    generateList();
+
+    // Prevent form submission & handle everything inside the event listener
+    const form = document.getElementById("form_name");
+    if (form) {
+        form.addEventListener("submit", function (event) {
+            event.preventDefault(); // Prevents the form from refreshing the page
+            updateGreeting();
+        });
+    } else {
+        console.error("Form with ID 'form_name' not found.");
+    }
+    // Updating the greeting using the input values
 function updateGreeting() {
     const firstName = document.getElementById('first_name').value;
     const middleInitial = document.getElementById('middle_initial').value;
@@ -48,23 +62,13 @@ function generateList() {
             output += `${i}. ${defaultWord}<br>`; 
         }
     }
-
     // Update the output container
     outputContainer.innerHTML = output; 
 }
+    // Create a paragraph element
+            const paragraph = document.createElement("p");
+            paragraph.textContent = output;
+			paragraph.classList.add(cssClass);
+            resultsContainer.appendChild(paragraph);
 
-// Run the functions after the page loads
-document.addEventListener('DOMContentLoaded', () => {
-    generateList();
-
-    // Prevent form submission & handle everything inside the event listener
-    const form = document.getElementById("form_name");
-    if (form) {
-        form.addEventListener("submit", function (event) {
-            event.preventDefault(); // Prevents the form from refreshing the page
-            updateGreeting();
-        });
-    } else {
-        console.error("Form with ID 'form_name' not found.");
-    }
 });
