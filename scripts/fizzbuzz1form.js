@@ -9,6 +9,7 @@ function generateList() {
   // Initialize the string for the list
     let output = ""; 
 
+    //Output results
     for (let i = 1; i <= maxCount; i++) {
         if (i % 3 === 0 && i % 5 === 0) {
             output += `${i}. ${divisibleBy3} ${divisibleBy5}<br>`; 
