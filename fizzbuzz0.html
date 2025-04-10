@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <title>Sydnee Verbal's Smart Black Panther Studios Fizz Buzz 0</title>
+    <title>Sydnee Verbal's Smart Black Panther Studios | Fizz Buzz 0</title>
     <link href="styles/stylesheet.css" rel="stylesheet">
     <script src="https://lint.page/kit/67ff88.js" crossorigin="anonymous"></script>
       <div data-include="components/header.html"></div>
@@ -11,7 +11,9 @@
 
 <body>
     <header>
-        <h1 id="greeting">Hello welcome to Smart Black Panther!</h1>
+        <h1>Hello, Welcome to Smart Black Panther!</h1>
+        <h2>Fizz Buzz</h2>
+        <h3 id="greeting"></h3>
         <nav>
           <div class="links">
             <ul>
@@ -87,11 +89,10 @@
                 // Creating the loop with the even and odd output
                 let output = '';
                 for (let i = 1; i <= countTo; i++) {
-                    output += `${i}. black cat<br>`;
                     if (i % 2 === 0) {
-                        output += `${i}. The number is even<br>`;
+                        output += `${i}. Black cat, the number is even<br>`;
                     } else {
-                        output += `${i}. The number is odd<br>`;
+                        output += `${i}. Black cat, the number is odd<br>`;
                     }
                 }
                 document.getElementById('output').innerHTML = output;
