@@ -27,7 +27,7 @@ main{
     font-family: "Telegraf";
     src:url('styles/fonts/Telegraf.otf') format('opentype');
 }
-header {
+header:not(.links){
 	font-family: "Telegraf", sans-serif;
 	src: url("styles/fonts/Telegraf.otf") format('opentype');
 	color: #FF6ECF; 
@@ -47,9 +47,9 @@ h2 {
 p {
     font-family: "Garet Book", Garet, sans-serif;
     color: #AD56C3;
-	text-shadow: 0px 0px 0px black; 
+    text-shadow: 0px 0px 0px black; 
 }	
-body {
+body:not(.output) {
     width: 90%;	
     max-width: 1250px;
     background: linear-gradient(90deg, #f21dac, #f54e1b, #F8C954, #C7C804, #74B0BF, #df1bf5);
@@ -65,7 +65,7 @@ body {
   margin-right: auto;
   width: 50%;	
 }
-.form_name, .ouput {
+.form_name, .output {
 	color: white; 
 	border: 3px solid #1C6EA4;
 	text-align: left;
