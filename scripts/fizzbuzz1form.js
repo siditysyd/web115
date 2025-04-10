@@ -18,8 +18,6 @@ function updateGreeting() {
         resultsContainer.innerHTML = "";
     }
 }
-//Gernate the list only after the form_name has been submitted
-	generateList();
 
 // Function for generating the word output list
 function generateList() {
@@ -48,6 +46,9 @@ function generateList() {
     // Update the output container
     outputContainer.innerHTML = output; 
 }
+
+//Gernate the list only after the form_name has been submitted
+	generateList();
     // Create a paragraph element
             const paragraph = document.createElement("p");
             paragraph.textContent = output;
