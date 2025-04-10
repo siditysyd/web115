@@ -93,7 +93,7 @@ nav {
     padding: 5px;
     text-align: center; 
 }
-a:not[.links]{
+a:not(.links){
 	color: #74B0BF;
 }
 a:visited {
