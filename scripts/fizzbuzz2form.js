@@ -1,4 +1,8 @@
- // Function to check divisibility
+  // Input number request
+let countTo = prompt(`How high do you want to count, ${firstName}? (Max: 125)`);
+countTo = parseInt(countTo, 10);
+
+// Function to check divisibility
 function checkDivision(num, divisor) {
     return num % divisor === 0; // Returns true if divisible, false otherwise
 }
