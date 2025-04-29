@@ -1,19 +1,22 @@
-  // Input number request
-let countTo = prompt(`How high do you want to count, ${firstName}? (Max: 125)`);
+// Prompt user for countTo value
+let countTo = prompt(`How high do you want to count? (Max: 125)`);
 countTo = parseInt(countTo, 10);
+if (isNaN(countTo) || countTo < 1 || countTo > 125) {
+    alert("Please enter a valid number between 1 and 125.");
+    countTo = 125; // Default to max if input is invalid
+}
 
 // Function to check divisibility
-function checkDivision(countTo, divisor) {
-    return countTo % divisor === 0; // Returns true if divisible, false otherwise
+function checkDivision(num, divisor) {
+    return num % divisor === 0; // Returns true if divisible
 }
 
 // Function to generate the word output list
-function generateList() {
-    const maxCount = 140;  
-    const firstDivisor = 3;  
-    const secondDivisor = 5;  
-    const divisibleBy3 = "Kitty!";  
-    const divisibleBy5 = "Cat!";  
+function generateList(countTo) {
+    const firstDivisor = 3;
+    const secondDivisor = 5;
+    const divisibleBy3 = "Kitty!";
+    const divisibleBy5 = "Cat!";
     const outputContainer = document.getElementById('output');
 
     if (!outputContainer) {
@@ -23,15 +26,15 @@ function generateList() {
 
     let output = ""; // Initialize the output string
 
-    for (let i = 1; i <= maxCount; i++) {
+    for (let i = 1; i <= countTo; i++) {
         if (checkDivision(i, firstDivisor) && checkDivision(i, secondDivisor)) {
-            output += `${i}. ${divisibleBy3} ${divisibleBy5}<br>`; 
+            output += `${i}. ${divisibleBy3} ${divisibleBy5}<br>`;
         } else if (checkDivision(i, firstDivisor)) {
             output += `${i}. ${divisibleBy3}<br>`;
         } else if (checkDivision(i, secondDivisor)) {
-            output += `${i}. ${divisibleBy5}<br>`; 
+            output += `${i}. ${divisibleBy5}<br>`;
         } else {
-            output += `${i}.<br>`; 
+            output += `${i}.<br>`;
         }
     }
 
@@ -56,7 +59,7 @@ function updateGreeting(event) {
     document.getElementById("greeting").textContent = newGreeting;
 
     // Call generateList after valid input
-    generateList();
+    generateList(countTo);
 }
 
 // Attach event listeners
