@@ -1,4 +1,40 @@
- // Update greeting and generate list
+ // Function to check divisibility
+function checkDivision(num, divisor) {
+    return num % divisor === 0; // Returns true if divisible, false otherwise
+}
+
+// Function to generate the word output list
+function generateList() {
+    const maxCount = 140;  
+    const firstDivisor = 3;  
+    const secondDivisor = 5;  
+    const divisibleBy3 = "Kitty!";  
+    const divisibleBy5 = "Cat!";  
+    const outputContainer = document.getElementById('output');
+
+    if (!outputContainer) {
+        console.error("Output container with ID 'output' not found.");
+        return;
+    }
+
+    let output = ""; // Initialize the output string
+
+    for (let i = 1; i <= maxCount; i++) {
+        if (checkDivision(i, firstDivisor) && checkDivision(i, secondDivisor)) {
+            output += `${i}. ${divisibleBy3} ${divisibleBy5}<br>`; 
+        } else if (checkDivision(i, firstDivisor)) {
+            output += `${i}. ${divisibleBy3}<br>`;
+        } else if (checkDivision(i, secondDivisor)) {
+            output += `${i}. ${divisibleBy5}<br>`; 
+        } else {
+            output += `${i}.<br>`; 
+        }
+    }
+
+    outputContainer.innerHTML = output; // Populate the output container
+}
+
+// Function to update greeting
 function updateGreeting(event) {
     event.preventDefault(); // Prevent form submission and page reload
 
@@ -15,37 +51,16 @@ function updateGreeting(event) {
     const newGreeting = `Hello, ${firstName} ${middleInitial ? middleInitial + '.' : ''} ${lastName}, Welcome to Fizz Buzz 2!`;
     document.getElementById("greeting").textContent = newGreeting;
 
-        //Check if number id divisible by defined variables
-              function checkDivision(num, divisor) {
-              return num % divisor === 0; // Returns true if divisible, returns false if not
+    // Call generateList after valid input
+    generateList();
 }
-       //Check the divisibility using modulus 
-              function generateList() {
-                const maxCount = 140;  
-                const firstDivisor = 3;
-                const secondDivisor = 5;
-                const divisibleBy3 = "Kitty!";
-                const divisibleBy5 = "Cat!";
-                const outputContainer = document.getElementById('output');
 
-    if (!outputContainer) {
-        console.error("Output container with ID 'output' not found.");
-        return;
+// Attach event listeners
+document.addEventListener('DOMContentLoaded', () => {
+    const form = document.getElementById("name_form");
+    if (form) {
+        form.addEventListener("submit", updateGreeting);
+    } else {
+        console.error("Form with ID 'name_form' not found.");
     }
-
-    let output = ""; // Initialize output string
-
-    for (let i = 1; i <= maxCount; i++) {
-        if (checkDivision(i, firstDivisor) && checkDivision(i, secondDivisor)) {
-            output += `${i}. ${divisibleBy3} ${divisibleBy5}<br>`; 
-        } else if (checkDivision(i, firstDivisor)) {
-            output += `${i}. ${divisibleBy3}<br>`;
-        } else if (checkDivision(i, secondDivisor)) {
-            output += `${i}. ${divisibleBy5}<br>`; 
-        } else {
-            output += `${i}.<br>`; 
-        }
-    }
-
-    outputContainer.innerHTML = output; // Populate output container
-}
+});
