@@ -1,12 +1,19 @@
-      // Updating the greeting using the input values
-            function updateGreeting() {
-                const firstName = document.getElementById('first_name').value;
-                const middleInitial = document.getElementById('middle_initial').value;
-                const lastName = document.getElementById('last_name').value;
-                const newGreeting = `Hello, ${firstName} ${middleInitial ? middleInitial + '.' : ''} ${lastName}, welcome to Fizz Buzz!`;
-                
-         // Showing the new greeting on the webpage
-                document.getElementById("greeting").textContent = newGreeting;
+ // Update greeting and generate list
+function updateGreeting(event) {
+    event.preventDefault(); // Prevent form submission and page reload
+
+    const firstName = document.getElementById('first_name').value.trim();
+    const middleInitial = document.getElementById('middle_initial').value.trim();
+    const lastName = document.getElementById('last_name').value.trim();
+
+    // Validate inputs
+    if (!firstName || !lastName) {
+        alert("Please enter both your first name and last name.");
+        return;
+    }
+
+    const newGreeting = `Hello, ${firstName} ${middleInitial ? middleInitial + '.' : ''} ${lastName}, Welcome to Fizz Buzz 1!`;
+    document.getElementById("greeting").textContent = newGreeting;
 
         //Check if number id divisible by defined variables
               function checkDivision(num, divisor) {
