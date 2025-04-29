@@ -17,7 +17,7 @@ function updateGreeting(event) {
 
         //Check if number id divisible by defined variables
               function checkDivision(num, divisor) {
-              return num % divisor === 0; // Returns true if divisible, otherwise false
+              return num % divisor === 0; // Returns true if divisible, returns false if not
 }
        //Check the divisibility using modulus 
               function generateList() {
