@@ -1,9 +1,9 @@
 // Prompt user for countTo value
-let countTo = prompt(`How high do you want to count? (Max: 125)`);
+let countTo = prompt(`How high do you want to count? (Max: 140)`);
 countTo = parseInt(countTo, 10);
-if (isNaN(countTo) || countTo < 1 || countTo > 125) {
-    alert("Please enter a valid number between 1 and 125.");
-    countTo = 125; // Default to max if input is invalid
+if (isNaN(countTo) || countTo < 1 || countTo > 140) {
+    alert("Please enter a valid number between 1 and 140.");
+    countTo = 140; // Default to max if input is invalid
 }
 
 // Function to check divisibility
