@@ -17,12 +17,12 @@ function updateGreeting(event) {
     document.getElementById("greeting").textContent = newGreeting;
 
     // Trigger prompt for countTo after successful name input
-    let countTo = prompt(`How high do you want to count, ${firstName}? (Max: 125)`);
+    let countTo = prompt(`How high do you want to count, ${firstName}? (Max: 140)`);
     countTo = parseInt(countTo, 10);
 
     // Validate prompt input
-    if (isNaN(countTo) || countTo < 1 || countTo > 125) {
-        alert("Please enter a valid number between 1 and 125.");
+    if (isNaN(countTo) || countTo < 1 || countTo > 140) {
+        alert("Please enter a valid number between 1 and 140.");
         return;
     }
 
