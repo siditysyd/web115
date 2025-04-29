@@ -1,33 +1,9 @@
-// Function to update greeting and trigger the prompt
-function updateGreeting(event) {
-    event.preventDefault(); // Prevent form submission and page reload
-
-    const firstName = document.getElementById('first_name').value.trim();
-    const middleInitial = document.getElementById('middle_initial').value.trim();
-    const lastName = document.getElementById('last_name').value.trim();
-
-    // Validate inputs
-    if (!firstName || !lastName) {
-        alert("Please enter both your first name and last name.");
-        return;
-    }
-
-    // Update greeting message
-    const newGreeting = `Hello, ${firstName} ${middleInitial ? middleInitial + '.' : ''} ${lastName}, Welcome to Fizz Buzz 2!`;
-    document.getElementById("greeting").textContent = newGreeting;
-
-    // Trigger prompt for countTo after successful name input
-    let countTo = prompt(`How high do you want to count, ${firstName}? (Max: 140)`);
-    countTo = parseInt(countTo, 10);
-
-    // Validate prompt input
-    if (isNaN(countTo) || countTo < 1 || countTo > 140) {
-        alert("Please enter a valid number between 1 and 140.");
-        return;
-    }
-
-    // Generate the list based on user input
-    generateList(countTo);
+// Prompt user for countTo value
+let countTo = prompt(`How high do you want to count? (Max: 125)`);
+countTo = parseInt(countTo, 10);
+if (isNaN(countTo) || countTo < 1 || countTo > 125) {
+    alert("Please enter a valid number between 1 and 125.");
+    countTo = 125; // Default to max if input is invalid
 }
 
 // Function to check divisibility
@@ -65,11 +41,32 @@ function generateList(countTo) {
     outputContainer.innerHTML = output; // Populate the output container
 }
 
-// Attach event listener to the form
+// Function to update greeting
+function updateGreeting(event) {
+    event.preventDefault(); // Prevent form submission and page reload
+
+    const firstName = document.getElementById('first_name').value.trim();
+    const middleInitial = document.getElementById('middle_initial').value.trim();
+    const lastName = document.getElementById('last_name').value.trim();
+
+    // Validate inputs
+    if (!firstName || !lastName) {
+        alert("Please enter both your first name and last name.");
+        return;
+    }
+
+    const newGreeting = `Hello, ${firstName} ${middleInitial ? middleInitial + '.' : ''} ${lastName}, Welcome to Fizz Buzz 2!`;
+    document.getElementById("greeting").textContent = newGreeting;
+
+    // Call generateList after valid input
+    generateList(countTo);
+}
+
+// Attach event listeners
 document.addEventListener('DOMContentLoaded', () => {
     const form = document.getElementById("name_form");
     if (form) {
-        form.addEventListener("submit", updateGreeting); // Trigger name processing and prompt
+        form.addEventListener("submit", updateGreeting);
     } else {
         console.error("Form with ID 'name_form' not found.");
     }
