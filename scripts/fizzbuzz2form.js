@@ -12,7 +12,7 @@ function updateGreeting(event) {
         return;
     }
 
-    const newGreeting = `Hello, ${firstName} ${middleInitial ? middleInitial + '.' : ''} ${lastName}, Welcome to Fizz Buzz 1!`;
+    const newGreeting = `Hello, ${firstName} ${middleInitial ? middleInitial + '.' : ''} ${lastName}, Welcome to Fizz Buzz 2!`;
     document.getElementById("greeting").textContent = newGreeting;
 
         //Check if number id divisible by defined variables
