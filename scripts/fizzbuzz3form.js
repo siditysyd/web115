@@ -15,8 +15,10 @@ function checkDivision(num, divisor) {
 function generateList(countTo) {
     const firstDivisor = 3;
     const secondDivisor = 5;
+    const thirdDivisor = 7;
     const divisibleBy3 = "Kitty!";
     const divisibleBy5 = "Cat!";
+    const divisibleBy7 = "Bang!"
     const outputContainer = document.getElementById('output');
 
     if (!outputContainer) {
@@ -27,12 +29,14 @@ function generateList(countTo) {
     let output = ""; // Initialize the output string
 
     for (let i = 1; i <= countTo; i++) {
-        if (checkDivision(i, firstDivisor) && checkDivision(i, secondDivisor)) {
-            output += `${i}. ${divisibleBy3} ${divisibleBy5}<br>`;
+        if (checkDivision(i, firstDivisor) && checkDivision(i, secondDivisor) && checkDivision(i, thirdDivisor) {
+            output += `${i}. ${divisibleBy3} ${divisibleBy5} ${divisibleBy7}<br>`;
         } else if (checkDivision(i, firstDivisor)) {
             output += `${i}. ${divisibleBy3}<br>`;
         } else if (checkDivision(i, secondDivisor)) {
             output += `${i}. ${divisibleBy5}<br>`;
+        } else if (checkDivision(i, thirdDivisor)) {
+            output += `${i}. ${divisibleBy7}<br>`;
         } else {
             output += `${i}.<br>`;
         }
