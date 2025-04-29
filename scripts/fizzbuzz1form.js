@@ -69,6 +69,3 @@ document.addEventListener('DOMContentLoaded', () => {
         console.error("Form with ID 'form_name' not found.");
     }
 });
-
-
-});
