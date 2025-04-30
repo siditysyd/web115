@@ -29,7 +29,7 @@ function generateList(countTo) {
     let output = ""; // Initialize the output string
 
     for (let i = 1; i <= countTo; i++) {
-        if (checkDivision(i, firstDivisor) && checkDivision(i, secondDivisor) && checkDivision(i, thirdDivisor) {
+        if (checkDivision(i, firstDivisor) && checkDivision(i, secondDivisor) && checkDivision(i, thirdDivisor)) {
             output += `${i}. ${divisibleBy3} ${divisibleBy5} ${divisibleBy7}<br>`;
         } else if (checkDivision(i, firstDivisor)) {
             output += `${i}. ${divisibleBy3}<br>`;
