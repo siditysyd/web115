@@ -18,7 +18,7 @@ function generateList(countTo) {
     const thirdDivisor = 7;
     const divisibleBy3 = "Kitty!";
     const divisibleBy5 = "Cat!";
-    const divisibleBy7 = "Bang!"
+    const divisibleBy7 = "Bang!";
     const outputContainer = document.getElementById('output');
 
     if (!outputContainer) {
