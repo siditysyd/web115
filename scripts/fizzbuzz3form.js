@@ -11,7 +11,6 @@ function checkDivision(num, divisor) {
     return num % divisor === 0; // Returns true if divisible
 }
 
-// Function to generate the word output list
 function generateList(countTo) {
     const firstDivisor = 3;
     const secondDivisor = 5;
@@ -29,27 +28,21 @@ function generateList(countTo) {
     let output = ""; // Initialize the output string
 
     for (let i = 1; i <= countTo; i++) {
-        let result = ""; // Initialize result string for each number
+        let result = []; // Use an array to accumulate words
 
-        // Check divisibility and append corresponding words
+        // Check divisibility and push corresponding words to the array
         if (checkDivision(i, firstDivisor)) {
-            result += `${divisibleBy3} `;
+            result.push(divisibleBy3);
         }
         if (checkDivision(i, secondDivisor)) {
-            result += `${divisibleBy5} `;
+            result.push(divisibleBy5);
         }
         if (checkDivision(i, thirdDivisor)) {
-            result += `${divisibleBy7} `;
+            result.push(divisibleBy7);
         }
 
         // If no words were added, just display the number
-        if (result === "") {
-            result = `${i}.`;
-        } else {
-            result = `${i}. ${result.trim()}`; // Trim any extra spaces
-        }
-
-        output += `${result}<br>`; // Add the result to the output string
+        output += `${i}. ${result.length > 0 ? result.join(" ") : ""}<br>`;
     }
 
     outputContainer.innerHTML = output; // Populate the output container
