@@ -59,7 +59,7 @@ function updateGreeting(event) {
         return;
     }
 
-    const newGreeting = `Hello, ${firstName} ${middleInitial ? middleInitial + '.' : ''} ${lastName}, Welcome to Fizz Buzz 2!`;
+    const newGreeting = `Hello, ${firstName} ${middleInitial ? middleInitial + '.' : ''} ${lastName}, Welcome to Fizz Buzz 3!`;
     document.getElementById("greeting").textContent = newGreeting;
 
     // Call generateList after valid input
