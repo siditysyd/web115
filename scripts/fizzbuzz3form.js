@@ -29,17 +29,27 @@ function generateList(countTo) {
     let output = ""; // Initialize the output string
 
     for (let i = 1; i <= countTo; i++) {
-        if (checkDivision(i, firstDivisor) && checkDivision(i, secondDivisor) && checkDivision(i, thirdDivisor)) {
-            output += `${i}. ${divisibleBy3} ${divisibleBy5} ${divisibleBy7}<br>`;
-        } else if (checkDivision(i, firstDivisor)) {
-            output += `${i}. ${divisibleBy3}<br>`;
-        } else if (checkDivision(i, secondDivisor)) {
-            output += `${i}. ${divisibleBy5}<br>`;
-        } else if (checkDivision(i, thirdDivisor)) {
-            output += `${i}. ${divisibleBy7}<br>`;
-        } else {
-            output += `${i}.<br>`;
+        let result = ""; // Initialize result string for each number
+
+        // Check divisibility and append corresponding words
+        if (checkDivision(i, firstDivisor)) {
+            result += `${divisibleBy3} `;
         }
+        if (checkDivision(i, secondDivisor)) {
+            result += `${divisibleBy5} `;
+        }
+        if (checkDivision(i, thirdDivisor)) {
+            result += `${divisibleBy7} `;
+        }
+
+        // If no words were added, just display the number
+        if (result === "") {
+            result = `${i}.`;
+        } else {
+            result = `${i}. ${result.trim()}`; // Trim any extra spaces
+        }
+
+        output += `${result}<br>`; // Add the result to the output string
     }
 
     outputContainer.innerHTML = output; // Populate the output container
