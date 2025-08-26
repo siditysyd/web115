@@ -1,0 +1,95 @@
+/* General setup */
+
+html, body {
+/* Increase font size for desktop */
+	font-size: 20px;
+}
+html {
+/* Set background color for desktop */
+    background-color: #C7C804;
+    margin: 0 auto;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;	
+}
+header {
+	font-family: "Telegraf", sans-serif;
+	color: #FF6ECF; 
+}
+h1 { 
+	margin: 0 auto; 
+	text-align: center;
+}
+	
+h2 {
+	color: #046362;
+	text-align: center;
+}
+p {
+	font-family: "Garet Book", Garet, sans-serif;
+	color: #AD56C3;
+}	
+body {
+    width: 90%;	
+    max-width: 1250px;
+    background-color:#000000; 
+    font-family: "Garet Book", Garet, sans-serif;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+    box-sizing: border-box;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;	
+}
+nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px;
+    margin: 0;
+}
+nav li {
+    display: inline-block;
+    list-style-type: none;
+    padding: 5px;
+    margin: 0 15px;
+    font-size: 1em;
+}
+nav { 
+    padding: 5px;
+    text-align: center; 
+}
+a {
+	color: #74B0BF;
+}
+a:visited {
+	color: #c7c804;
+}
+a:hover {
+	color: #74b0bf;
+}
+a:focus {
+	outline: thin dotted;
+}
+h3, h4, h5, h6 {
+	text-align: center;
+}
+footer {
+/* Footer styles */
+	font-family: Garet, "Garet Book";
+    	padding: 10px;
+    	text-align: center; 
+	margin-top: 350px;
+}
+footer a {
+	font-size: 1em;
+	text-align: center; 
+	margin: 0 10px;
+}
