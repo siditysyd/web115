@@ -3,7 +3,7 @@
 html, body {
 /* Increase font size for desktop */
 	font-size: 20px;
-	font-family: 'Quicksand', sans-serif;
+	font-family: 'Archivo Black', sans-serif;
 }
 html {
 /* Set background color for desktop */
@@ -16,7 +16,7 @@ main{
     justify-content: center;	
 }
 header {
-	font-family: 'Quicksand', sans-serif;
+	font-family: 'Archivo Black', sans-serif;
 	font-size: 18px;
 	color: #FF6ECF; 
 	display: flex;
@@ -33,14 +33,14 @@ h2 {
 	text-align: center;
 }
 p {
-	font-family: "Garet Book", Garet, sans-serif;
+	font-family: 'Archivo Black', sans-serif;
 	color: #AD56C3;
 }	
 body {
     width: 90%;	
     max-width: 1250px;
     background-color:#000000; 
-    font-family: "Garet Book", Garet, sans-serif;
+    font-family: 'Archivo Black', sans-serif;
     margin: 0 auto;
     padding: 0;
     text-align: center;
@@ -88,7 +88,7 @@ h3, h4, h5, h6 {
 }
 footer {
 /* Footer styles */
-	font-family: Garet, "Garet Book";
+	font-family: 'Archivo Black', sans-serif;
     	padding: 10px;
     	text-align: center; 
 	margin-top: 350px;
@@ -98,4 +98,5 @@ footer a {
 	text-align: center; 
 	margin: 0 10px;
 }
+
 
