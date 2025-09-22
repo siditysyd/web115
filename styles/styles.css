@@ -3,6 +3,7 @@
 html, body {
 /* Increase font size for desktop */
 	font-size: 20px;
+	font-family: 'Quicksand', sans-serif;
 }
 html {
 /* Set background color for desktop */
@@ -15,8 +16,12 @@ main{
     justify-content: center;	
 }
 header {
-	font-family: "Telegraf", sans-serif;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 18px;
 	color: #FF6ECF; 
+	display: flex;
+	align-items: center;
+	
 }
 h1 { 
 	margin: 0 auto; 
@@ -93,3 +98,4 @@ footer a {
 	text-align: center; 
 	margin: 0 10px;
 }
+
