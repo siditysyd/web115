@@ -1,113 +1,114 @@
 /* General setup */
+
 html, body {
-    font-size: 15px;
-    font-family: 'Archivo Black', sans-serif;
-    color: #C7C804;
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    position: relative;
+/* Increase font size for desktop */
+	font-size: 20px;
 }
-
-/* Transparent background image using overlay */
-body::before {
-    content: "";
-    background-image: url("../images/backgroundimage.png");
-    background-size: cover;
-    opacity: 0.5; /* Adjust transparency here */
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+html {
+/* Set background color for desktop */
+    background: url(\..images\backgroundimage.png);
+    margin: 0 auto;
 }
-
-/* Header Layout */
-header {
+main{
     display: flex;
-    align-items: center;
-    padding: 10px;
+    flex-direction: column;
+    justify-content: center;	
 }
-
-/* Logo Image */
-header img {
-    width: 50px;
-    height: 100px;
-    margin-right: 10px;
+.brand-info {
+	margin-left: auto;
+	margin-right: auto;
+	padding: 15px; 
 }
-
-/* Header text follows logo */
-header h1 {
-    margin: 0;
-    text-align: left;
+.links {
+	text-color: black;
+	text-shadow: 1px 2px 2px #ffffff;
 }
-
-/* Navigation centered */
-nav {
+header:not(.links){
+	font-family: 'Archivo Black', sans-serif;
+	color: #FF6ECF; 
+	text-shadow: 0px 0px 0px black; 
+}
+h1 { 
+	margin: 0 auto;
+}
+h2 {
+	color: #046362;
+	text-shadow: 0px 0px 0px black;
+}
+p {
+    font-family: "Archivo Black', sans-serif;
+    color: #AD56C3;
+    text-shadow: 0px 0px 0px black; 
+}	
+body:not(.output) {
+    width: 90%;	
+    max-width: 1250px;
+    color: #A9A9A9;;
+    font-family: 'Archivo Black', sans-serif;
+    margin: 0 auto;
+    padding: 0;
     text-align: center;
-    margin: 20px 0;
+    box-sizing: border-box;
 }
-
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;	
+}
+.form_name, .output {
+	color: white; 
+	border: 3px solid transparent;
+	text-align: left;
+	
+	
+}
 nav ul {
     list-style-type: none;
     display: flex;
+    flex-direction: row;
     justify-content: center;
-    padding: 0;
+    padding: 10px;
     margin: 0;
 }
-
 nav li {
+    display: inline-block;
+    list-style-type: none;
+    padding: 5px;
     margin: 0 15px;
     font-size: 1em;
+    color: #FE696E;
+    text-shadow: 0px 0px 0px black; 
 }
-
-/* Main content box on top of background */
-main {
-    background-color: #A9A9A9;
-    padding: 20px;
-    margin: 20px auto;
-    width: 90%;
-    max-width: 1250px;
-    position: relative;
-    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+nav { 
+    padding: 5px;
+    text-align: center; 
 }
-
-/* Typography */
-h2 {
-    color: #046362;
-    text-align: center;
-}
-p {
-    color: #AD56C3;
-}
-h3, h4, h5, h6 {
-    text-align: center;
-}
-
-/* Links */
-a {
-    color: #74B0BF;
+a:not(.links){
+	color: #74B0BF;
 }
 a:visited {
-    color: #c7c804;
+	color: #c7c804;
 }
 a:hover {
-    color: #FE696E;
+	color: #74b0bf;
 }
 a:focus {
-    outline: thin dotted;
-    color: #F8C954;
+	outline: thin dotted;
 }
-
-/* Footer */
+h3, h4, h5, h6 {
+	text-align: center;
+}
 footer {
-    font-family: 'Archivo Black', sans-serif;
-    padding: 10px;
-    text-align: center;
-    margin-top: 350px;
+/* Footer styles */
+	font-family: 'Arvchivo Black';
+    	padding: 10px;
+    	text-align: center; 
+	margin-top: 350px;
 }
 footer a {
-    font-size: 1em;
-    margin: 0 10px;
+	font-size: 1em;
+	text-align: center; 
+	margin: 0 10px;
 }
-
 
