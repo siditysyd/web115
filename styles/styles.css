@@ -9,10 +9,6 @@ html, body {
     padding: 0;
 }
 
-body {
-    background-image: url("../images/backgroundimage.png");
-}
-
 /* Header Layout */
 header div {
     display: flex;
@@ -41,6 +37,7 @@ p {
 	color: #AD56C3;
 }	
 body {
+	background-image: url("../images/backgroundimage.png");
     width: 90%;	
     max-width: 1250px;
     font-family: 'Archivo Black', sans-serif;
@@ -88,10 +85,11 @@ a:visited {
 	color: #c7c804;
 }
 a:hover {
-	color: #74b0bf;
+	color: #FE696E;
 }
 a:focus {
 	outline: thin dotted;
+	color: #F8C954;
 }
 h3, h4, h5, h6 {
 	text-align: center;
@@ -108,6 +106,7 @@ footer a {
 	text-align: center; 
 	margin: 0 10px;
 }
+
 
 
 
