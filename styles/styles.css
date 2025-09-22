@@ -2,7 +2,7 @@
 
 html, body {
 /* Increase font size for desktop */
-	font-size: 20px;
+	font-size: 15px;
 	font-family: 'Archivo Black', sans-serif;
 	color: #C7C804;
     margin: 0 auto;
@@ -16,7 +16,7 @@ body {
 /* Header Layout */
 header div {
     display: flex;
-    align-items: center;  /* Vertically align logo and nav */
+    align-items: auto;  /* Vertically align logo and nav */
     justify-content: space-between; /* Space between logo and nav */
 }
 
@@ -24,6 +24,7 @@ header div {
 header img {
     width: auto;  /* Adjust the logo size */
     height: auto;
+	align-items: left;
 }
 	
 h1 { 
@@ -100,6 +101,7 @@ footer a {
 	text-align: center; 
 	margin: 0 10px;
 }
+
 
 
 
