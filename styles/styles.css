@@ -8,6 +8,10 @@ html, body {
     margin: 0 auto;
     padding: 0;
 }
+body {
+	background-image: url("../images/backgroundimage.png");
+	opacity: 0.5;
+}
 
 /* Header Layout */
 header div {
@@ -37,7 +41,6 @@ p {
 	color: #AD56C3;
 }	
 body {
-	background-image: url("../images/backgroundimage.png");
     width: 90%;	
     max-width: 1250px;
     font-family: 'Archivo Black', sans-serif;
@@ -113,6 +116,7 @@ footer a {
 	text-align: center; 
 	margin: 0 10px;
 }
+
 
 
 
