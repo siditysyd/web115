@@ -36,6 +36,7 @@ p {
 }	
 body {
 	background-image: url("../images/backgroundimage.png");
+	opacity: 0.5;
     width: 90%;	
     max-width: 1250px;
     font-family: 'Archivo Black', sans-serif;
@@ -43,6 +44,13 @@ body {
     padding: 0;
     text-align: center;
     box-sizing: border-box;
+}
+main {
+	display: block;
+	line-height: 1.5;
+	background-color: #A9A9A9;
+	font-size: 100%;
+	padding: 1px;
 }
 .center {
   display: block;
@@ -104,6 +112,7 @@ footer a {
 	text-align: center; 
 	margin: 0 10px;
 }
+
 
 
 
