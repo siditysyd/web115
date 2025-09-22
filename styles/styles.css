@@ -74,6 +74,13 @@ nav {
     padding: 5px;
     text-align: center; 
 }
+.viper {
+	display: block;
+	align-item: center;
+	margin: auto;
+	width: 50%;
+
+}
 a {
 	color: #74B0BF;
 }
@@ -101,6 +108,7 @@ footer a {
 	text-align: center; 
 	margin: 0 10px;
 }
+
 
 
 
