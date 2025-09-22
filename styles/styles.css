@@ -4,23 +4,27 @@ html, body {
 /* Increase font size for desktop */
 	font-size: 20px;
 	font-family: 'Archivo Black', sans-serif;
-}
-html {
-/* Set background color for desktop */
-    background-color: #C7C804;
+	color: #C7C804;
     margin: 0 auto;
+    padding: 0;
 }
-main{
+
+body {
+    background-image: url("../images/background.png");
+}
+
+/* Header Layout */
+header div {
     display: flex;
-    flex-direction: column;
-    justify-content: center;	
+    align-items: center;  /* Vertically align logo and nav */
+    justify-content: space-between; /* Space between logo and nav */
 }
-header {
-	font-family: 'Archivo Black', sans-serif;
-	font-size: 18px;
-	color: #FF6ECF; 
-	display: flex;
-	align-items: center;
+
+/* Logo Image */
+header img {
+    width: 250px;  /* Adjust the logo size */
+    height: auto;
+}
 	
 }
 h1 { 
@@ -98,5 +102,6 @@ footer a {
 	text-align: center; 
 	margin: 0 10px;
 }
+
 
 
