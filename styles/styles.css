@@ -51,7 +51,9 @@ body:not(.output) {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;	
+  width: 50%;
+	length: 625px;
+		width: 711px;
 }
 .form_name, .output {
 	color: white; 
@@ -110,6 +112,7 @@ footer a {
 	text-align: center; 
 	margin: 0 10px;
 }
+
 
 
 
