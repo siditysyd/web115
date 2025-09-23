@@ -61,7 +61,7 @@ body:not(.output) {
 	
 }
 nav ul {
-    list-style-type: none;
+    text-decoration: none;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -71,7 +71,7 @@ nav ul {
 nav li {
 	font-family: 'Archivo Black', sans-serif;
     display: inline-block;
-    list-style-type: none;
+    text-decoration: none;
     padding: 5px;
     margin: 0 15px;
     font-size: 1em;
@@ -110,6 +110,7 @@ footer a {
 	text-align: center; 
 	margin: 0 10px;
 }
+
 
 
 
