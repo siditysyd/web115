@@ -90,6 +90,7 @@ a:visited {
 }
 a:hover {
 	color: #FE696E;
+    text-decoration: underline;
 }
 a:focus {
 	outline: thin dotted;
@@ -109,6 +110,7 @@ footer a {
 	text-align: center; 
 	margin: 0 10px;
 }
+
 
 
 
