@@ -40,7 +40,6 @@ body:not(.output) {
     width: 90%;	
     max-width: 1250px;
     background-color: #A9A9A9;
-	opacity: 0.2;
     font-family: 'Archivo Black', sans-serif;
     margin: 0 auto;
     padding: 0;
@@ -109,6 +108,7 @@ footer a {
 	text-align: center; 
 	margin: 0 10px;
 }
+
 
 
 
