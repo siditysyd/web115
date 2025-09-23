@@ -82,14 +82,14 @@ nav {
     padding: 5px;
     text-align: center; 
 }
-a:not(.links){
-	color: #74B0BF;
+a{
+	color: #0B6380;
 }
 a:visited {
-	color: #c7c804;
+	color: #C7C804;
 }
 a:hover {
-	color: #74b0bf;
+	color: #FE696E;
 }
 a:focus {
 	outline: thin dotted;
@@ -109,6 +109,7 @@ footer a {
 	text-align: center; 
 	margin: 0 10px;
 }
+
 
 
 
