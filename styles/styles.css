@@ -55,6 +55,14 @@ body:not(.output) {
 	length: 625px;
 		width: 711px;
 }
+.brand-viper {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+	length: 625px;
+		width: 711px;
+}
 .form_name, .output {
 	color: white; 
 	border: 3px solid transparent;
@@ -112,6 +120,7 @@ footer a {
 	text-align: center; 
 	margin: 0 10px;
 }
+
 
 
 
