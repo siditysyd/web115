@@ -14,6 +14,9 @@ main{
     flex-direction: column;
     justify-content: center;	
 }
+#header {
+	border: 5px solid #FFF;
+}
 .brand-info {
 	margin-left: auto;
 	margin-right: auto;
@@ -120,6 +123,7 @@ footer a {
 	text-align: center; 
 	margin: 0 10px;
 }
+
 
 
 
