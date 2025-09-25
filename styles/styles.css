@@ -60,18 +60,16 @@ body:not(.output) {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
-	length: 625px;
-		width: 711px;
+  width: 40%;
+  length: 220px;
 }
 /* Center brand image */
 .brand-viper {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
-	length: 625px;
-		width: 711px;
+  width: 40%;
+  length: 220px;
 }
 /* Form and output styles */
 .form_name, .output {
