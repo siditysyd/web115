@@ -30,8 +30,10 @@ header:not(.links) {
 	font-family: 'Archivo Black', sans-serif;
 	color: #b5047a; 
 	text-shadow: 1px 1px 0px black; 
-    
-
+    text-align: center;
+}
+.links {
+    text-decoration: none;
 }
 /* Title styles */
 h1 { 
