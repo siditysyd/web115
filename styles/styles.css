@@ -54,7 +54,7 @@ p {
     font-family: 'Archivo Black', sans-serif;
     color: #AD56C3;
     padding: 5px;
-    text-align: center;
+    text-align: left;
 }
 /* Body styles */
 body:not(.output) {
