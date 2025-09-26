@@ -17,7 +17,7 @@ main{
 /*Add border to header*/
 #header {
 	border: 5px dotted #FFF;
-    padding: 20px;
+    padding: 10px;
 }
 /* Center brand info in header */
 .brand-info {
@@ -29,7 +29,7 @@ main{
 header:not(.links) {
 	font-family: 'Archivo Black', sans-serif;
 	color: #b5047a; 
-	text-shadow: 1px 1px 0px black; 
+	text-shadow: 2px 0px 2px black;
     text-align: center;
 }
 .links {
@@ -38,7 +38,7 @@ header:not(.links) {
 /* Title styles */
 h1 { 
 	margin: 0 auto;
-	color: #d90076;
+	color: #A6036F;
 }
 h2 {
 	color: #046362;
@@ -47,7 +47,15 @@ h2 {
 p {
     font-family: 'Archivo Black', sans-serif;
     color: #AD56C3;
+    padding: 25px;
+    text-align: left;
 }	
+.contract {
+    font-family: 'Archivo Black', sans-serif;
+    color: #AD56C3;
+    padding: 5px;
+    text-align: center;
+}
 /* Body styles */
 body:not(.output) {
     width: 90%;	
@@ -104,9 +112,27 @@ nav {
     padding: 5px;
     text-align: center; 
 }
+ul li{
+    list-style-type: square;
+    margin: 0;
+    padding: 10px;
+    text-align: left;
+    color: #0B6380;
+
+}
+.classes-list {
+    color: #3b9403;
+    font-size: 1.1em;
+    text-decoration: underline;
+}
+.quote {
+    font-style: italic;
+    color: #d45b05;
+    text-align: center;
+}
 /* Link styles */
 a{
-	color: #0B6380;
+	color: #1C3F5F;
 }
 a:visited {
 	color: #d45b05;
@@ -117,10 +143,6 @@ a:hover {
 }
 a:focus {
 	outline: thin dotted;
-}
-h3 {
-    color: #3b9403;
-	text-align: center;
 }
 /* Footer styles */
 footer {
@@ -133,6 +155,13 @@ footer a {
 	font-size: 1em;
 	text-align: center; 
 	margin: 0 10px;
+}
+.footer-article p {
+    color: #b5047a;
+    font-size: 1.5em;
+    text-align: center;
+    margin: 0 auto;
+    text-shadow: 2px 0px 2px black;
 }
 
 
