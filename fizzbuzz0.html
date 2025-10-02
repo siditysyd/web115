@@ -8,7 +8,7 @@
 	<!-- Authentication Script-->
 	<script src="https://lint.page/kit/67ff88.js" crossorigin="anonymous"></script>
 	<!--Stylesheet-->
-	<link href="styles/styles.css" rel="stylesheet">
+	<link href="styles/default.css" rel="stylesheet">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
 	<!-- Fonts from Google Fonts -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,10 +17,11 @@
 	<!--Script for Fizz Buzz Form-->
 	<script src="scripts/fizzbuzzform.js" defer></script>
 </head>
+<body>
 <header>
 </header>
+<div data-include="components/header.html"></div>
 <main>
-	<div data-include="components/header.html"></div>
 		<div>
 			<h2>Fizz Buzz 0</h2>
 			<h3 id="greeting">Welcome to Sneaky Viper Studios</h3>
@@ -33,7 +34,7 @@
 
 				<!-- Middle Initial Field -->
 				<label for="middle-initial">Middle Initial:</label>
-				<input type="text" id="middle-initial" name="middle-initial" placeholder="Enter your Middle Initial" maxlength="1">
+				<input type="text" id="middle-initial" name="middle-initial" maxlength="1">
 
 				<!-- Last Name Field -->
 				<label for="last-name">Last Name:</label>
@@ -44,8 +45,9 @@
 			</form>
 		</div>
 </main>
-<div data-include="components/footer.html"></div>
+	<div data-include="components/footer.html"></div>
 	<script src="scripts/HTMLInclude.js"></script>
 <footer>
 </footer>
+</body>
 </html>
