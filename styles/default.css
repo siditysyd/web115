@@ -136,10 +136,11 @@ ul li{
 }
 /* Link styles */
 a{
-	color: #1C3F5F;
+	color: #;
+    text-decoration: none;
 }
 a:visited {
-	color: #4F2203;
+	color: #0000FF;
 }
 a:hover {
 	color: #FE696E;
