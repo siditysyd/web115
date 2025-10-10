@@ -58,8 +58,9 @@ body:not(.output) {
     padding: 0;
     text-align: center;
     box-sizing: border-box;
-    /* Link styles */
-a{
+}
+/* Link styles */
+a {
 	color: #9f0a0a;
     text-decoration: none;
 }
