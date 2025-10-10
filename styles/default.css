@@ -136,14 +136,14 @@ ul li{
 }
 /* Link styles */
 a{
-	color: #b04d07dc;
+	color: #8a0808;
     text-decoration: none;
 }
 a:visited {
-	color: #15314C;
+	color: #b04d07dc;
 }
 a:hover {
-	color: #FE696E;
+	color: #2e0587;
     text-decoration: underline;
 }
 a:focus {
@@ -162,7 +162,7 @@ footer a {
 	margin: 0 10px;
 }
 .footer-article p {
-    color: #b5047a;
+    color: ##920262;
     font-size: 1.5em;
     text-align: center;
     margin: 0 auto;
