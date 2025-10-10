@@ -28,14 +28,14 @@ main{
 /* Header styles */
 header{
 	font-family: 'Archivo Black', sans-serif;
-	color: #b5047a; 
+	color: #920262; 
 	text-shadow: 2px 0px 2px black;
     text-align: center;
 }
 /* Title styles */
 h1 { 
 	margin: 0 auto;
-	color: #A6036F;
+	color: #920262;
 }
 h2 {
 	color: #046362;
@@ -43,7 +43,7 @@ h2 {
 /* Paragraph styles */
 p {
     font-family: 'Archivo Black', sans-serif;
-    color: #AD56C3;
+    color: #582466;
     padding: 25px;
     text-align: left;
     margin: 0 25px;
@@ -121,7 +121,7 @@ ul li{
     margin: 0;
     padding: 10px;
     text-align: left;
-    color: #0B6380;
+    color: #15314C;
 
 }
 .classes-list {
