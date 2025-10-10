@@ -33,7 +33,7 @@ header{
     color: #920262;
 }
 /* Title styles */
-h1 { 
+h1, h3 { 
 	margin: 0 auto;
 	color: #920262;
 }
@@ -61,14 +61,14 @@ body:not(.output) {
 }
 /* Link styles */
 a {
-	color: #9f0a0a;
+	color: #b00b0b;
     text-decoration: none;
 }
 a:visited {
 	color: #d25c08dc;
 }
 a:hover {
-	color: #3d08af;
+	color: #a09607;
     text-decoration: underline;
 }
 a:focus {
@@ -162,7 +162,7 @@ footer a {
 	text-align: center; 
 	margin: 0 10px;
 }
-.footer-article p {
+.footer-article {
     color: #920262;
     font-size: 1.5em;
     text-align: center;
