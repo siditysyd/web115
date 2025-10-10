@@ -121,17 +121,17 @@ ul li{
     margin: 0;
     padding: 10px;
     text-align: left;
-    color: #15314C;
+    color: #063E51;
 
 }
 .classes-list {
-    color: #3b9403;
+    color: #183A03;
     font-size: 1.1em;
     text-decoration: underline;
 }
 .quote {
     font-style: italic;
-    color: #d45b05;
+    color: #4F2203;
     text-align: center;
 }
 /* Link styles */
@@ -139,7 +139,7 @@ a{
 	color: #1C3F5F;
 }
 a:visited {
-	color: #d45b05;
+	color: #4F2203;
 }
 a:hover {
 	color: #FE696E;
