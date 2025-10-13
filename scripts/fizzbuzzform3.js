@@ -18,13 +18,15 @@ document.addEventListener("DOMContentLoaded", function () {
         document.getElementById("greeting").textContent = `Welcome to Sneaky Viper Studios, ${fullName}!`;
 
         // Get divisibility settings
-        const divisor3 = parseInt(document.getElementById("divisor3").value);
+        const divisor3 = parseInt(document.getElementById("divisor3").value) || 1;
         const word1 = document.getElementById("word1").value.trim();
-        const divisor5 = parseInt(document.getElementById("divisor5").value);
+        const divisor5 = parseInt(document.getElementById("divisor5").value) || 1;
         const word2 = document.getElementById("word2").value.trim();
-        const divisor7 = parseInt(document.getElementById("divisor7").value);
+        let divisor7 = parseInt(document.getElementById("divisor7").value) || 1;
         const word3 = document.getElementById("word3").value.trim();
-        const totalCount = parseInt(document.getElementById("total-count").value);
+        let totalCount = parseInt(document.getElementById("total-count").value);
+        if (isNaN(divisor7) || divisor7 === 0) divisor7 = 1;
+        if (isNaN(totalCount) || totalCount < 1) totalCount = 100;
 
         // Find or create results container
         let resultsContainer = document.getElementById("results-container");
@@ -37,31 +39,35 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
         // Loop through and generate results
+        // Loop through and generate results
         for (let i = 1; i <= totalCount; i++) {
             let outputWords = [];
-            let cssClass = "";
-
+            let classList = [];
             if (i % divisor3 === 0) {
                 outputWords.push(word1);
-                cssClass = "sneaky";
+                classList.push("sneaky");
             }
             if (i % divisor5 === 0) {
                 outputWords.push(word2);
-                cssClass = "viper";
+                classList.push("viper");
             }
             if (i % divisor7 === 0) {
                 outputWords.push(word3);
-                cssClass = "bang";
-            }
-
-            if (outputWords.length === 0) {
-                outputWords.push(""); // blank if no match
-                cssClass = "hi";
+                classList.push("bang");
             }
 
             const paragraph = document.createElement("p");
-            paragraph.textContent = `${i}. ${outputWords.join(", ")}`;
-            paragraph.classList.add(cssClass);
+            if (outputWords.length === 0) {
+                paragraph.textContent = `${i}. None`;
+                paragraph.classList.add("hi");
+            } else {
+                paragraph.textContent = `${i}. ${outputWords.join(" ")}`;
+                classList.forEach(cls => {
+                    if (cls && cls.trim() !== "") {
+                        paragraph.classList.add(cls);
+                    }
+                });
+            }
             resultsContainer.appendChild(paragraph);
         }
     });
