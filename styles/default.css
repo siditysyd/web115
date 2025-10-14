@@ -37,13 +37,12 @@ main{
 }
 /*Add border to header only*/
 #header {
-	border: 5px dotted #FFF;
-    padding: 10px;
+	border: 5px solid #FFF;
+    padding: 20px;
 }
 /* Header styles */
 header{
 	font-family: 'Archivo Black', sans-serif; 
-	text-shadow: 2px 0px 2px black;
     text-align: center;
     color: #920262;
     font-size: 1em;
@@ -54,6 +53,8 @@ header{
 h1, h3 { 
 	margin: 0 auto;
 	color: #920262;
+    text-shadow: 2px 0px 2px black;
+    padding: 20px;
 }
 h2 {
 	color: #046362;
