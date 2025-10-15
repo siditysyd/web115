@@ -50,7 +50,7 @@ header{
 	margin: 0 10px;
 }
 /* Title styles */
-h1, h3 { 
+h1 { 
 	margin: 0 auto;
 	color: #920262;
     text-shadow: 2px 0px 2px black;
@@ -162,10 +162,10 @@ footer a {
 	text-align: center; 
 	margin: 0 10px;
 }
-.footer-article {
+footer p {
+    font-size: 1.2em;
     color: #920262;
-    font-size: 1.5em;
+    text-shadow: 1px 0px 1px black;
+    margin: 0;
     text-align: center;
-    margin: 0 auto;
-    text-shadow: 2px 0px 2px black;
 }
