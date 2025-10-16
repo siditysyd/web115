@@ -8,6 +8,9 @@ a {
 a:visited {
 	color: #d25c08dc;
 }
+a:active {
+	color: #d25c08dc;
+}
 a:hover {
 	color: #a09607;
     text-decoration: underline;
@@ -37,8 +40,8 @@ main{
 }
 /*Add border to header only*/
 #header {
-	border: 5px solid #FFF;
-    padding: 20px;
+	border: 10px solid #FFF;
+    padding: 10px;
 }
 /* Header styles */
 header{
@@ -63,7 +66,7 @@ h2 {
 p {
     font-family: 'Archivo Black', sans-serif;
     color: #582466;
-    padding: 25px;
+    padding: 20px;
     text-align: left;
     margin: 0 25px;
 }
@@ -72,6 +75,7 @@ body:not(.output) {
     width: 90%;	
     max-width: 1250px;
     background-color: #C2C2C2;
+    opacity: 0.95;
     font-family: 'Archivo Black', sans-serif;
     margin: 0 auto;
     padding: 0;
@@ -116,7 +120,7 @@ nav ul {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding: 15px;
+    padding: 20px;
     margin: 0;
 }
 
@@ -124,24 +128,24 @@ nav li {
     font-family: 'Archivo Black', sans-serif;
     display: inline-block;
     text-decoration: none;
-    padding: 15px;
+    padding: 20px;
     margin: 0 25px;
     font-size: 2em;
 }
 nav { 
-    padding: 5px;
+    padding: 20px;
     text-align: center; 
 }
 ul li{
     list-style-type: square;
     margin: 0;
-    padding: 10px;
+    padding: 20px;
     text-align: left;
     color: #063E51;
 
 }
 .classes-list {
-    color: #183A03;
+    color: #327906;
     font-size: 1.1em;
     text-decoration: underline;
 }
@@ -153,7 +157,7 @@ ul li{
 /* Footer styles */
 footer {
     font-family: 'Archivo Black', sans-serif;
-    padding: 10px;
+    padding: 20px;
     text-align: center; 
     margin-top: 10vh;
 }
@@ -168,4 +172,26 @@ footer p {
     text-shadow: 1px 0px 1px black;
     margin: 0;
     text-align: center;
+}
+/* Color classes */
+.dark {
+    color: #582466;
+}
+.magenta {
+    color: #920262;
+}
+.cyan {
+    color: #046362;
+}
+.red {
+    color: #950909;
+}
+.orange {
+    color: #d25c08dc;
+}
+.yellow {
+    color: #a09607;
+}
+.green {
+    color: #327906;
 }
