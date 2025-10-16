@@ -175,6 +175,7 @@ footer p {
 /* Color classes */
 .dark {
     color: #582466;
+    text-shadow: .5px 0px .5px black;
 }
 .magenta {
     color: #920262;
@@ -188,8 +189,8 @@ footer p {
 .orange {
     color: #d25c08dc;
 }
-.yellow {
-    color: #a09607;
+.blue {
+    color: #001ee3;
 }
 .green {
     color: #327906;
