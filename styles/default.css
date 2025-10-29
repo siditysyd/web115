@@ -38,11 +38,6 @@ main{
 	margin-right: auto;
 	padding: 15px; 
 }
-/*Add border to header only*/
-#header {
-	border: 10px solid #FFF;
-    padding: 10px;
-}
 /* Header styles */
 header{
 	font-family: 'Archivo Black', sans-serif; 
@@ -50,14 +45,14 @@ header{
     color: #920262;
     font-size: 1em;
 	text-align: center; 
-	margin: 0 10px;
+	margin: 0 auto;
+    border: 10px solid #FFF;
+    padding: 10px;
 }
 /* Title styles */
 h1 { 
-	margin: 0 auto;
 	color: #920262;
     text-shadow: 2px 0px 2px black;
-    padding: 20px;
 }
 h2 {
 	color: #046362;
@@ -128,7 +123,7 @@ nav li {
     display: inline-block;
     text-decoration: none;
     padding: 20px;
-    margin: 0 25px;
+    margin: 10px;
     font-size: 2em;
 }
 nav { 
