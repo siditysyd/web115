@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Sydnee Verbal's Sneaky Viper &#9788; WEB115 &#9788; Fizz Buzz 4</title>
+	<!--Stylesheets-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+    <link href="styles/default.css" rel="stylesheet">
+	<!-- Fonts from Google Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+	<!--Script for Fizz Buzz Form-->
+	<script src="scripts/fizzbuzzform4.js" defer></script>
+	<!--Authenticator-->
+    <script src="https://lint.page/kit/67ff88.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+	<div data-include="components/header.html"></div>
+
+	<main>
+		<div>
+			<h2>Fizz Buzz 4</h2>
+			<h3 id="greeting">Welcome to Sneaky Viper Studios</h3>
+
+			<!-- Form for User Input -->
+			<form id="name-form">
+				<!-- Name Fields -->
+				<label for="first-name">First Name:</label>
+				<input type="text" id="first-name" name="first-name" placeholder="Enter your First Name" required>
+
+				<label for="middle-initial">Middle Initial:</label>
+				<input type="text" id="middle-initial" name="middle-initial" placeholder="Enter your Middle Initial" maxlength="1">
+
+				<label for="last-name">Last Name:</label>
+				<input type="text" id="last-name" name="last-name" placeholder="Enter your Last Name" required>
+
+				<!-- Fizz Buzz Settings -->
+				<div id="settings">
+					<h3>Fizz Buzz Settings</h3>
+					<p>Enter three divisibile numbers and their matching words. Customize how high you want to count!</p>
+
+					<label for="divisor1">First Divisor:</label>
+					<input type="number" id="divisor1" name="divisor1" value="3" min="1" required>
+
+					<label for="word1">Word for First Divisor:</label>
+					<input type="text" id="word1" name="word1" value="Unique" required>
+
+					<label for="divisor2">Second Divisor:</label>
+					<input type="number" id="divisor2" name="divisor2" value="5" min="1" required>
+
+					<label for="word2">Word for Second Divisor:</label>
+					<input type="text" id="word2" name="word2" value="Voice" required>
+
+					<label for="divisor3">Third Divisor:</label>
+					<input type="number" id="divisor3" name="divisor3" value="7" min="1" required>
+
+					<label for="word3">Word for Third Divisor:</label>
+					<input type="text" id="word3" name="word3" value="BANG" required>
+
+					<label for="total-count">Total Count:</label>
+					<input type="number" id="total-count" name="total-count" value="125" min="1" required>
+				</div>
+
+				<!-- Submit Button -->
+				<button id="submit-button" type="submit">Submit</button>
+			</form>
+		</div>
+	</main>
+
+	<div data-include="components/footer.html"></div>
+	<script src="scripts/HTMLInclude.js"></script>
+</body>
+
+</html>
