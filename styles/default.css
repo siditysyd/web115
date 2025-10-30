@@ -57,6 +57,9 @@ h1 {
 h2 {
 	color: #046362;
 }
+h3 {
+    text-align: center;
+}
 /* Paragraph styles */
 p {
     font-family: 'Archivo Black', sans-serif;
@@ -186,4 +189,18 @@ footer p {
 }
 .green {
     color: #225403;
+}
+#settings {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: left;
+    border: 3px solid transparent;
+}
+#divisor1, #divisor2, #divisor3, #total-count {
+    width: 100px;
+}
+#word1, #word2, #word3 {
+    width: 150px;
 }
