@@ -49,6 +49,12 @@ header{
     border: 10px solid #FFF;
     padding: 10px;
 }
+.logo-container img {
+    width: 250px; 
+    height: auto; 
+    display: block; 
+    margin: 0 auto; 
+}
 /* Title styles */
 h1 { 
 	color: #920262;
