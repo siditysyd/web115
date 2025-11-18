@@ -49,9 +49,22 @@ header{
     border: 10px solid #FFF;
     padding: 10px;
 }
+/* Header Layout */
+header div {
+    display: flex;
+    align-items: center;  /* Vertically align logo and nav */
+    justify-content: space-between; /* Space between logo and nav */
+}
+
+/* Logo Image */
+header img {
+    width: 150px;  /* Adjust the logo size */
+    height: auto;
+}
+
 .logo-container img {
-    width: 250px; 
-    height: auto; 
+    width: 150px; 
+    height: 150px; 
     display: block; 
     margin: 0 auto; 
 }
